@@ -1,0 +1,23 @@
+/**
+ ********************************
+ * _PARAGRAPHS.SCSS
+ ********************************
+ */
+
+/**
+ * @module Paragraph [p]
+ * @description Check em' paragraphs out
+ *
+ * @modifier [.lede] Make the introductory text (usually a paragraph) of a document slightly larger.
+ *
+ * @markup
+   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+   ac turpis egestas.</p>
+
+   <p class="lede">Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+   ac turpis egestas.</p>
+ */
+.lede,
+.lead {
+  @include font-size(get(font-size) * 1.125);
+}

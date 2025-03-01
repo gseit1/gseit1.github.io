@@ -1,0 +1,24 @@
+/**
+ ********************************
+ * _ACCESSIBILITY.SCSS
+ ********************************
+ */
+
+/**
+ * @module Accessibility [.accessibility, .a11y]
+ * @description Hide content off-screen without resorting to 'display:none;'.
+ *
+ * @markup
+    <p class="accessibility">This text is only seen by screen readers!</p>
+ */
+.a11y,
+.accessibility {
+  @include accessibility(!important);
+}
+  @each $state in medium, large, xlarge {
+    @include media(#{$state}) {
+      .accessibility--#{$state} {
+        @include accessibility(!important);
+      }
+    }
+  }

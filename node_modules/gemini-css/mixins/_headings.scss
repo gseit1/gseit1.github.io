@@ -1,0 +1,28 @@
+/**
+ ********************************
+ * _HEADINGS.SCSS
+ ********************************
+ */
+
+/**
+ * @mixin headings
+ * @description Style any number of headings in one fell swoop
+ *
+ * @param {integer} [$from=1] The starting range of headings to style
+ * @param {integer} [$to=6] The ending range of headings to style
+ *
+ * @example
+    @include headings(1, 3) {
+      color:#A55BAD;
+    }
+ */
+@mixin headings($from: 1, $to: 6) {
+  $selector: ();
+  @for $i from $from through $to {
+    $selector: append($selector, "h#{$i}", comma);
+  }
+
+  #{$selector} {
+    @content;
+  }
+}

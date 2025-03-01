@@ -1,0 +1,33 @@
+/**
+ ********************************
+ * _FONT-FACE.SCSS
+ ********************************
+ */
+
+/**
+ * @mixin font-face
+ * @description Add custom font-face
+ *
+ * @param {string} [$font-family] The name of the font-family
+ * @param {string} [$file-path] The location of the font files relative to the outputed CSS (.eot, .woff, .ttf, and .svg expected)
+ * @param {string} [$weight=normal] The weight of the font
+ * @param {string} [$style=normal] The style of the font
+ * @param {string} [$version=1] A number to append to the include to bust the cache on font files
+ *
+ * @example
+    .foo {
+      @include font-face('UI Font', '../fonts/ui-font/ui-font', bold, italic);
+    }
+ */
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $version: 1 ) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file-path}.eot?bust=v#{$version}');
+    src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+         url('#{$file-path}.woff?bust=v#{$version}')   format('woff'),
+         url('#{$file-path}.ttf?bust=v#{$version}')    format('truetype'),
+         url('#{$file-path}.svg##{$font-family}')      format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

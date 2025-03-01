@@ -1,0 +1,49 @@
+/**
+ ********************************
+ * _LISTS.SCSS
+ ********************************
+ */
+
+/**
+ * @module Lists [ul, ol]
+ * @description Your basic lists
+ *
+ * @modifier [.list--numbered] Have a numbered 'ul' without the semantics implied by using an 'ol'.
+ * @modifier [.list--prune] Clear all the style from a list
+ *
+ * @markup
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <ul class="numbered-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+ */
+
+
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Have a numbered 'ul' without the semantics implied by using an 'ol'.
+ */
+/*ul*/.list--numbered {
+  list-style-type: decimal;
+}
+
+// Remove list styles
+/*ul*/.list--prune {
+  @include prune-list;
+}

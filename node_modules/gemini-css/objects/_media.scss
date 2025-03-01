@@ -1,0 +1,69 @@
+/**
+ ********************************
+ * _MEDIA.SCSS
+ ********************************
+ */
+
+@if get(media, $gemini-use) {
+
+  /**
+   * @module Media [.media]
+   * @description Place any image and text-like content side-by-side
+   */
+  .media {
+    display: block;
+    margin-bottom: get(spacing);
+    @include clearfix;
+  }
+
+  /**
+   * @submodule Media Image [.media__img]
+   * @description Image container for media
+   *
+   * @modifier [.media__img--rev] Reverse the image location
+   */
+  .media__img {
+    float: left;
+    margin-right: get(spacing);
+  }
+  /**
+   * Reversed image location (right instead of left).
+   */
+  .media__img--rev {
+    float: right;
+    margin-left: get(spacing);
+  }
+
+  .media__img img,
+  .media__img--rev img {
+    display: block;
+  }
+
+  /**
+   * @submodule Media Body [.media__content]
+   * @description Body copy associated to the image
+   */
+  .media__content {
+    overflow: hidden;
+  }
+  .media__content,
+  .media__content > :last-child {
+    margin-bottom: 0;
+  }
+
+  /**
+   * @markup
+    <div class="media">
+      <img src="http://www.placetim.com/150/150" class="media__img">
+      <p class="media__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+   */
+
+  /**
+   * @markup
+    <div class="media">
+      <img src="http://www.placetim.com/150/150" class="media__img--rev">
+      <p class="media__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+   */
+}//endif

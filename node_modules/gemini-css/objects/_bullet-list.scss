@@ -1,0 +1,41 @@
+/**
+ ********************************
+ * _BULLET-LIST.SCSS
+ ********************************
+ */
+
+@if get(bullet-list, $gemini-use) {
+
+  /**
+   * @module Bullet Lists [.bullet-list]
+   * @description Allows you to replace default bullets with icons
+   * Has a dependency of the icons module
+   *
+   * @markup
+      <ul class="bullet-list">
+        <li>Foo</li>
+        <li>Bar</li>
+        <li>Baz</li>
+        <li>Foo Bar Baz</li>
+      </ul>
+   */
+  .bullet-list {
+    list-style: none;
+    margin-left: 0;
+
+    & > li {
+      list-style: none;
+      position: relative;
+      padding-left: get(spacing);
+      @include icon;
+      @extend .icon--default-arrow-right;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: getColor(g50);
+      }
+    }
+  }
+}//endif

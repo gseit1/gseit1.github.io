@@ -1,0 +1,14 @@
+/**
+ ********************************
+ * _CLEARFIX.SCSS
+ ********************************
+ */
+
+/**
+ * @module Clearfix [.clearfix, .cf]
+ * @description Clearfix, as per: http://css-tricks.com/snippets/css/clear-fix/
+ */
+.clearfix,
+.cf {
+  @include clearfix;
+}

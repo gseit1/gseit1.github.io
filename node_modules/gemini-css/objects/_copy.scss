@@ -1,0 +1,41 @@
+/**
+ ********************************
+ * _COPY.SCSS
+ ********************************
+ */
+
+@if get(copy, $gemini-use) {
+
+  /**
+   * @module Copy Text [.copy]
+   * @description These are styles to make text more readability. Mostly used
+   * for heavy copy on a website.
+   *
+   * @markup
+      <div class="copy">
+        <header>
+          <img src="http://www.placetim.com/600/100">
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Repellendus voluptate odio, doloribus illum, cupiditate pariatur tenetur
+laudantium nisi quos architecto, vitae dolor dolore unde ipsa iusto eaque, omnis
+necessitatibus magnam.</p>
+      </div>
+   */
+  .copy {
+
+    section,
+    .section,
+    header {
+      margin-bottom: get(spacing) * 3;
+    }
+
+    p {
+      font-size: get(epsilon, $gemini-headings);
+    }
+
+    img {
+      display: inline;
+    }
+  }
+}//endif

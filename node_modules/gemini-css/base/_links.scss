@@ -1,0 +1,21 @@
+/**
+ ********************************
+ * _LINKS.SCSS
+ ********************************
+ */
+
+/**
+ * @module Links [a]
+ * @description Your basic link
+ *
+ * @markup
+ *   <a href="http://www.carpages.ca">Click me!</a>
+ */
+a {
+  color: get(link-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

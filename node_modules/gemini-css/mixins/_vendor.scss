@@ -1,0 +1,25 @@
+/**
+ ********************************
+ * _VENDOR.SCSS
+ ********************************
+ */
+
+/**
+ * @mixin vendor
+ * @description Create vendor-prefixed CSS in one go, e.g.
+ *
+ * @param {string} [$property] CSS property
+ * @param {undefined} [$value] CSS values
+ *
+ * @example
+    .foo {
+      @include vendor(border-radius, 4px);
+    }
+ */
+@mixin vendor($property, $value...) {
+  -webkit-#{$property}: $value;
+     -moz-#{$property}: $value;
+      -ms-#{$property}: $value;
+       -o-#{$property}: $value;
+          #{$property}: $value;
+}

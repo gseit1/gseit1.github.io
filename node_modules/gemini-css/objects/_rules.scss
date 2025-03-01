@@ -1,0 +1,111 @@
+/**
+ ********************************
+ * _RULES.SCSS
+ ********************************
+ */
+
+@if get(rules, $gemini-use) {
+
+  /**
+   * @module Horizontal Rules [.rule]
+   * @description Adds a horizontal line as a break (extends 'hr')
+   *
+   * @alternative [.rule-left] Puts the rule on the left of an element
+   * @alternative [.rule-right] Puts the rule on the right of an element
+   * @alternative [.rule-top] Puts the rule on the top of an element
+   *
+   * @modifier [.rule--dotted] Dotted rules
+   * @modifier [.rule--dashed] Dashed rules
+   * @modifier [.rule--ornament] Ornament rules
+   *
+   * @markup
+    <h1 class="rule">Carpages.ca</h1>
+
+    <p>This one's dotted</p>
+    <hr class="rule rule--dotted">
+
+    <p>This one's dashed</p>
+    <hr class="rule rule--dashed">
+
+    <p>This one has an ornament over it</p>
+    <hr class="rule rule--ornament">
+   */
+
+  /**
+   * @markup
+    <h3>Mmmm... so custom</h3>
+    <hr class="rule rule--ornament" data-ornament="!">
+   */
+
+  %rule {
+    border: none;
+  }
+
+  /**
+   * Default horizontal rules and rules classes
+   */
+  hr,
+  .rule {
+    @extend %rule;
+    @include border($position: "bottom");
+  }
+  .rule-left {
+    @extend %rule;
+    @include border($position: "left");
+  }
+  .rule-right {
+    @extend %rule;
+    @include border($position: "right");
+  }
+  .rule-top {
+    @extend %rule;
+    @include border($position: "top");
+  }
+
+  .rule--brand {
+    border-color: get(brand-color);
+  }
+
+  .rule--large {
+    border-width: 4px;
+  }
+
+  /**
+   * Dotted rules
+   */
+  .rule--dotted {
+    border-bottom-style: dotted;
+  }
+
+
+  /**
+   * Dashed rules
+   */
+  .rule--dashed {
+    border-bottom-style: dashed;
+  }
+
+  /**
+   * Ornamental rules. Places a &#167; over the rule.
+   */
+  .rule--ornament {
+    position: relative;
+
+    &:after {
+      content: "\00A7";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      line-height: 0;
+      text-align: center;
+    }
+
+    /**
+     * Pass in an arbitrary ornament though a data attribute
+     */
+    &[data-ornament]:after {
+      content: attr(data-ornament);
+    }
+  }
+}//endif
