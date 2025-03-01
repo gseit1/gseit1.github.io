@@ -35,7 +35,7 @@
 
 
             <div class="item">
-                <img src="character.webp" alt="">
+                <img src="images/character.webp" alt="">
             </div>
 
 
@@ -79,119 +79,84 @@
             </nav>
         </div>
 
-        <div id="about-me">
-            <h2>Hello I'm George Seitaridis</h2>
-            <p>I'm a proffesional web developer and this is my resume!</p>
+       <div id="about-me">
+    <h2>Hello I'm George Seitaridis</h2>
+    <p>I'm a professional web developer and this is my resume!</p>
 
-            <div class="card border-dark mb-3">
-                <div class="card-header">GSeit</div>
-                <div class="card-body">
-                    <h5 class="card-title">Full Stack Web Dev</h5>
-                    <p class="card-text">Just give me your idea and i'll make it true! <br>
-                        Always looking ahead!
-                    </p>
-                </div>
-            </div>
-
+    <div class="about-content">
+        <div class="circle" id="circle">
+            <span>GSEIT</span>
         </div>
-        <div id="skills">
-            <div class="skills-text">
-                <p>Hi!I'm new to programming world, with lot of courage to fail over and over till i become the <br>best
-                    version of my
-                    self!Courently i'm studing informatics in the Department of Informatics Auth Csd, <br> also
-                    discovering the world of web
-                    development as an front-end Dev.</p>
-                <p>Let me show you my skills as an Front End Developer</p>
+
+        <div class="custom-card" id="custom-card">
+            <div class="custom-card-header">GSeit</div>
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Full Stack Web Dev</h5>
+                <p class="custom-card-text">Just give me your idea and I'll make it true! <br>
+                    Always looking ahead!
+                </p>
             </div>
-
-            <div class="skills-skills">
-
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action active " aria-current="true" data-bs-toggle="modal" data-bs-target="#front-end" >
-                        Front End Technologies
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#back-end">Back End Technologies</button>
-                    <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#database">Database</button>
-
-                </div>
-               
-                <div class="modal fade " id="front-end" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="front-end">Front-end</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML</li>
-                                    <li class="list-group-item">CSS</li>
-                                    <li class="list-group-item">JAVASCRIPT</li>
-                                    <li class="list-group-item">BOOTSTRAP</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="back-end" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="back-end">Front-end</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">NODE.JS</li>
-                                    <li class="list-group-item">EXPRESS.JS</li>
-                                    <li class="list-group-item">PHP</li>
-                                    <li class="list-group-item">PYTHON</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="modal fade" id="database" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="database">Front-end</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">MyPhp</li>
-                                    <li class="list-group-item">MongoDb</li>
-
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
+    </div>
+</div>
+        
+<div id="skills">
+    <div class="skills-text">
+        <p>Hi!I'm new to programming world, with lot of courage to fail over and over till i become the <br>best
+            version of my
+            self!Courently i'm studing informatics in the Department of Informatics Auth Csd, <br> also
+            discovering the world of web
+            development as an front-end Dev.</p>
+        <p>Let me show you my skills as an Front End Developer</p>
+    </div>
+
+    <div class="skills-skills">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="front-end">
+                Front End Technologies
+            </button>
+            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="back-end">
+                Back End Technologies
+            </button>
+            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="database">
+                Database
+            </button>
+        </div>
+
+        <div id="front-end-display" class="category-display">
+            <h2>Front End Technologies</h2>
+            <ul class="sub-list">
+                <li>HTML <div class="fancy-level-bar" data-level="3"></div></li>
+                <li>CSS <div class="fancy-level-bar" data-level="4"></div></li>
+                <li>JavaScript <div class="fancy-level-bar" data-level="2"></div></li>
+                <li>Bootstrap <div class="fancy-level-bar" data-level="3"></div></li>
+            </ul>
+        </div>
+    
+        <div id="back-end-display" class="category-display">
+            <h2>Back End Technologies</h2>
+            <ul class="sub-list">
+                <li>Node.js <div class="fancy-level-bar" data-level="2"></div></li>
+                <li>Express.js <div class="fancy-level-bar" data-level="1"></div></li>
+                <li>PHP <div class="fancy-level-bar" data-level="3"></div></li>
+                <li>Python <div class="fancy-level-bar" data-level="2"></div></li>
+            </ul>
+        </div>
+    
+        <div id="database-display" class="category-display">
+            <h2>Database</h2>
+            <ul class="sub-list">
+                <li>MySQL <div class="fancy-level-bar" data-level="3"></div></li>
+                <li>MongoDB <div class="fancy-level-bar" data-level="2"></div></li>
+            </ul>
+        </div>
+    </div>
+</div>
         <div id="projects">
             <a href="#">
                 <div class="card" style="width: 18rem; height:min-content;">
 
-                    <img src="computer.jpeg" class="card-img-top" alt="...">
+                    <img src="images/computer.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h5 class="card-title">Eshop Captured-Mob</h5>
@@ -203,7 +168,7 @@
             <a href="#">
                 <div class="card" style="width: 18rem; height:min-content;">
 
-                    <img src="computer.jpeg" class="card-img-top" alt="...">
+                    <img src="images/computer.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h5 class="card-title">Hair/Nails Reservation</h5>
@@ -214,7 +179,7 @@
             <a href="#">
                 <div class="card" style="width: 18rem; height:min-content;">
 
-                    <img src="computer.jpeg" class="card-img-top" alt="...">
+                    <img src="images/computer.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h5 class="card-title">Eshop Template</h5>
@@ -248,7 +213,141 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const card = document.getElementById('custom-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        card.classList.add('fade-in');
+                    }
+                });
+            });
+    
+            observer.observe(card);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+        const card = document.getElementById('custom-card');
+        const circle = document.getElementById('circle');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    card.classList.add('fade-in');
+                    circle.classList.add('bounce');
+                }
+            });
+        });
+
+        observer.observe(card);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    const skillsSection = document.getElementById('skills');
+    const skillsText = skillsSection.querySelectorAll('p, h1, h2, h3, h4, h5, h6'); // Select all text elements
+
+    const checkTextColor = () => {
+        const rect = skillsSection.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const pixelColor = getPixelColor(centerX, centerY);
+
+        skillsText.forEach(textElement => {
+            if (pixelColor[0] < 128) { // Check if pixel is closer to black
+                textElement.style.color = 'white';
+            } else {
+                textElement.style.color = 'black';
+            }
+        });
+    };
+
+    const getPixelColor = (x, y) => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        ctx.drawImage(document.documentElement, 0, 0); // Capture the entire page
+
+        const pixelData = ctx.getImageData(x, y, 1, 1).data;
+        return pixelData;
+    };
+
+    checkTextColor(); // Initial check
+
+    skillsSection.addEventListener('animationiteration', checkTextColor); // Check on animation iteration
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeSection = document.getElementById('about-me');
+    const skillsSection = document.getElementById('skills');
+    const circle = document.querySelector('.circle');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target === aboutMeSection) {
+                    resetAnimation(circle, 'fallAndBounceAboutMe');
+                } else if (entry.target === skillsSection) {
+                    resetAnimation(skillsSection, 'diagonalBackground');
+                }
+            } else {
+                if (entry.target === aboutMeSection) {
+                    circle.style.animationPlayState = 'paused';
+                } else if (entry.target === skillsSection) {
+                    skillsSection.style.animationPlayState = 'paused';
+                }
+            }
+        });
+    }, { threshold: 0.1 });
+
+    function resetAnimation(element, animationName) {
+        element.style.animation = 'none';
+        element.offsetHeight; // Trigger reflow to apply style change
+        element.style.animation = null;
+        element.style.animation = `${animationName} 4s ease-in-out 1 forwards`; // Replace with your actual animation properties.
+    }
+
+    observer.observe(aboutMeSection);
+    observer.observe(skillsSection);
+
+    circle.style.animationPlayState = 'paused';
+    skillsSection.style.animationPlayState = 'paused';
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const categoryDisplays = document.querySelectorAll('.category-display');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.dataset.category;
+
+            categoryDisplays.forEach(display => {
+                display.classList.remove('active');
+            });
+
+            document.getElementById(category + '-display').classList.add('active');
+
+            // Highlight level bars
+            const levelBars = document.querySelectorAll('.fancy-level-bar');
+            levelBars.forEach(bar => {
+                const level = parseInt(bar.dataset.level);
+                bar.innerHTML = ''; // Clear existing segments
+
+                for (let i = 0; i < 4; i++) {
+                    const segment = document.createElement('span');
+                    if (i < level) {
+                        segment.classList.add('active');
+                    }
+                    bar.appendChild(segment);
+                }
+            });
+        });
+    });
+});
+    </script>
+    
 </body>
 
 </html>
