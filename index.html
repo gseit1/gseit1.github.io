@@ -1,364 +1,216 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zilla+Slab:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&family=Zilla+Slab:wght@300&display=swap"
-        rel="stylesheet">
-    <title>GSeit's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dev Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-    <div class="grid-container">
-        <div class="logo">
-            <div class="item">
-                <img src="images/character.webp" alt="Character Image" class="character-img">
-            </div>
-            <div class="item">
-                <h1>GSeit's Portfolio</h1>
-                <p>Professional purposes only</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-laptop"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
-                </svg>
-                <p class="scroll-text">Looking for someone with fresh ideas and ambitions? Scroll down</p>
-            </div>
-        </div>
-
-
-
-
-            <nav class="navbar bg-body-tertiary fixed-top">
-                <div class="container-fluid">
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#about-me">About me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#skills">My skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#social">My social media</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-       <div id="about-me">
-    <h2>Hello I'm George Seitaridis</h2>
-    <p>I'm a professional web developer and this is my resume!</p>
-
-    <div class="about-content">
-        <div class="circle" id="circle">
-            <span>GSEIT</span>
-        </div>
-
-        <div class="custom-card" id="custom-card">
-            <div class="custom-card-header">GSeit</div>
-            <div class="custom-card-body">
-                <h5 class="custom-card-title">Full Stack Web Dev</h5>
-                <p class="custom-card-text">Just give me your idea and I'll make it true! <br>
-                    Always looking ahead!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-<div id="skills">
-    <div class="skills-text">
-        <p>Hi!I'm new to programming world, with lot of courage to fail over and over till i become the <br>best
-            version of my
-            self!Courently i'm studing informatics in the Department of Informatics Auth Csd, <br> also
-            discovering the world of web
-            development as an Full Stack Dev.</p>
-        <p>Let me show you my skills </p>
-    </div>
-
-    <div class="skills-skills">
-        <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="front-end">
-                Front End Technologies
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="#">G<span class="text-primary">seit</span>.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="back-end">
-                Back End Technologies
-            </button>
-            <button type="button" class="list-group-item list-group-item-action category-btn" data-category="database">
-                Database
-            </button>
-        </div>
-
-        <div id="front-end-display" class="category-display">
-            <h2>Front End Technologies</h2>
-            <ul class="sub-list">
-                <li>HTML <div class="fancy-level-bar" data-level="3"></div></li>
-                <li>CSS <div class="fancy-level-bar" data-level="4"></div></li>
-                <li>JavaScript <div class="fancy-level-bar" data-level="2"></div></li>
-                <li>Bootstrap <div class="fancy-level-bar" data-level="3"></div></li>
-            </ul>
-        </div>
-    
-        <div id="back-end-display" class="category-display">
-            <h2>Back End Technologies</h2>
-            <ul class="sub-list">
-                <li>Node.js <div class="fancy-level-bar" data-level="2"></div></li>
-                <li>Express.js <div class="fancy-level-bar" data-level="1"></div></li>
-                <li>PHP <div class="fancy-level-bar" data-level="3"></div></li>
-                <li>Python <div class="fancy-level-bar" data-level="2"></div></li>
-            </ul>
-        </div>
-    
-        <div id="database-display" class="category-display">
-            <h2>Database</h2>
-            <ul class="sub-list">
-                <li>MySQL <div class="fancy-level-bar" data-level="3"></div></li>
-                <li>MongoDB <div class="fancy-level-bar" data-level="2"></div></li>
-            </ul>
-        </div>
-    </div>
-</div>
-        <div id="projects">
-            <h2>Take a look of my projects</h2>
-            <a href="http://seiteshopsample.atwebpages.com/">
-                <div class="card" style="width: 18rem; height:min-content;">
-
-                    <img src="images/captured.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <h5 class="card-title">Eshop Captured-Mob</h5>
-                        <p class="card-text">Full stack e-shop with PHP+MySql with admin panel.</p>
-                    </div>
-                </div>
-            </a>
-            
-
-            <a href="http://projectsplat.rf.gd/index.php">
-                <div class="card" style="width: 18rem; height:min-content;">
-
-                    <img src="images/projPlat.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <h5 class="card-title">Projects platform</h5>
-                        <p class="card-text">Fulla stack projects manager where you can easily join/create teams.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://eprosklitiria.netlify.app/">
-                <div class="card" style="width: 18rem; height:min-content;">
-
-                    <img src="images/eprosklitiria.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <h5 class="card-title">eProsklitiria </h5>
-                        <p class="card-text">Static webpage for web invitations with javascript + bootstrap.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div id="contact">
-            
-        </div>
-        <div id="social">
-            <h2>You  find me on my social media or sent me an email!</h2>
-        
-            <div class="social-container">
-                <button type="button" class="btn btn-outline-light">
-                    <a href="http://"></a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                    </svg> Instagram
-                </button>
-                <button type="button" class="btn btn-outline-light">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                    </svg> Facebook
-                </button>
-                <a href="mailto:giorgosseitar@gmail.com" class="btn btn-outline-light">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.803 2.882L15 11.383V5.383zM1 5.383v6l4.803-2.882L1 5.383zM14.803 12H1.197l4.803-2.882L14.803 12z" />
-                    </svg> Send me an email
-                </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+              <a href="cvc.pdf" class="btn btn-primary ms-3" download="My_CV">Download CV</a>
             </div>
+          </div>
+        </nav>
+      </header>
+      
+      <!-- Hero Section -->
+      <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-md-6">
+              <h1 class="hero-title">I'm a <span class="highlight">Web Developer</span></h1>
+              <p class="lead text-muted">100% HTML5 Bootstrap Templates Made by Growtech.</p>
+              <div class="d-flex gap-3">
+                <a href="#about" class="btn btn-outline-dark btn-lg">Get Started</a>
+                <a href="#portfolio" class="btn btn-primary btn-lg">View Portfolio</a>
+              </div>
+              <div class="social-links mt-4">
+                <span>Follow me on:</span>
+                <a href="#" class="ms-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ms-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="ms-2"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Right Content -->
+           <!-- Right Content -->
+                <div class="col-md-6 text-center position-relative">
+                    <div class="hero-graphic-wrapper">
+                    <div class="shape-circle"></div>
+                    <div class="shape-triangle"></div>
+                    <img src="img1.avif" alt="Profile" class="hero-photo img-fluid">
+                    </div>
+                </div>
+  
+          </div>
         </div>
+      </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <h5 class="text-uppercase text-primary mb-3">About Me</h5>
+          <h2 class="section-title mb-4">Why hire me for your next project?</h2>
+          <p class="text-muted">
+            I'm a Creative Developer and UI/UX Designer from New York, working in web development and print media. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+          </p>
+          <p class="text-muted">
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add a personal touch to your product and make sure that it is eye-catching and easy to use.
+          </p>
+          <a href="#projects" class="btn btn-primary mt-3">View Portfolio</a>
+        </div>
+        <!-- Image Content -->
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="aboutme.png" alt="About Me" class="img-fluid rounded shadow about-image">
+          </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous">
-    </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const card = document.getElementById('custom-card');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        card.classList.add('fade-in');
-                    }
-                });
-            });
-    
-            observer.observe(card);
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-        const card = document.getElementById('custom-card');
-        const circle = document.getElementById('circle');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    card.classList.add('fade-in');
-                    circle.classList.add('bounce');
-                }
-            });
-        });
+  </section>
 
-        observer.observe(card);
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-    const skillsSection = document.getElementById('skills');
-    const skillsText = skillsSection.querySelectorAll('p, h1, h2, h3, h4, h5, h6'); // Select all text elements
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">My Expertise</h2>
+      <div class="row">
+        <!-- Skill 1 -->
+        <div class="col-md-4 mb-4">
+          <h5>Front end </h5>
+          <p class="text-muted">HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="col-md-4 mb-4">
+          <h5>Back end</h5>
+          <p class="text-muted">PHP, LARAVEL,PYTHON,</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="col-md-4 mb-4">
+          <h5>Back end</h5>
+          <p class="text-muted">JAVA,C++,C</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="col-md-4 mb-4">
+          <h5>Front end</h5>
+          <p class="text-muted">React</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+        </div>
+        <!-- Skill 5 -->
+        <div class="col-md-4 mb-4">
+          <h5>Databases</h5>
+          <p class="text-muted">Mysql , sqlite,mongoDB</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+        </div>
+        <!-- Skill 6 -->
+        <div class="col-md-4 mb-4">
+          <h5>Problem Solving</h5>
+          <p class="text-muted">Debug, Code Reviews</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary mt-4">Hire Me</a>
+    </div>
+  </section>
 
-    const checkTextColor = () => {
-        const rect = skillsSection.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
+  <section id="projects" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">My Projects</h2>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="icon-wrapper">
+              <img src="eprosklitiria.png" alt="Web Development" class="icon" />
+            </div>
+            <h5 class="mt-3">eProsklitiria</h5>
+            <p class="text-muted">A static webpage with pure html,css,js,bootstarp</p>
+            <a href="#" class="btn btn-outline-primary">Visit</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="project-card active">
+            <div class="icon-wrapper">
+              <img src="images/ui-ux-icon.svg" alt="UI/UX Design" class="icon" />
+            </div>
+            <h5 class="mt-3">UI/UX Design</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-outline-primary">Read More →</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="project-card">
+            <div class="icon-wrapper">
+              <img src="images/wordpress-icon.svg" alt="WordPress Development" class="icon" />
+            </div>
+            <h5 class="mt-3">WordPress Development</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-outline-primary">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        const pixelColor = getPixelColor(centerX, centerY);
+  <!-- PARALLAX SECTION -->
+  <section class="parallax-section">
+    <div class="overlay">
+      <h2 class="text-white text-center">Let’s Build Something Awesome Together</h2>
+    </div>
+  </section>
 
-        skillsText.forEach(textElement => {
-            if (pixelColor[0] < 128) { // Check if pixel is closer to black
-                textElement.style.color = 'white';
-            } else {
-                textElement.style.color = 'black';
-            }
-        });
-    };
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Me</h2>
+      <form class="mt-4 w-75 mx-auto">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" />
+        <input type="email" class="form-control mb-3" placeholder="Your Email" />
+        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+        <button class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    const getPixelColor = (x, y) => {
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        ctx.drawImage(document.documentElement, 0, 0); // Capture the entire page
-
-        const pixelData = ctx.getImageData(x, y, 1, 1).data;
-        return pixelData;
-    };
-
-    checkTextColor(); // Initial check
-
-    skillsSection.addEventListener('animationiteration', checkTextColor); // Check on animation iteration
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const aboutMeSection = document.getElementById('about-me');
-    const skillsSection = document.getElementById('skills');
-    const circle = document.querySelector('.circle');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (entry.target === aboutMeSection) {
-                    resetAnimation(circle, 'fallAndBounceAboutMe');
-                } else if (entry.target === skillsSection) {
-                    resetAnimation(skillsSection, 'diagonalBackground');
-                }
-            } else {
-                if (entry.target === aboutMeSection) {
-                    circle.style.animationPlayState = 'paused';
-                } else if (entry.target === skillsSection) {
-                    skillsSection.style.animationPlayState = 'paused';
-                }
-            }
-        });
-    }, { threshold: 0.1 });
-
-    function resetAnimation(element, animationName) {
-        element.style.animation = 'none';
-        element.offsetHeight; // Trigger reflow to apply style change
-        element.style.animation = null;
-        element.style.animation = `${animationName} 4s ease-in-out 1 forwards`; // Replace with your actual animation properties.
-    }
-
-    observer.observe(aboutMeSection);
-    observer.observe(skillsSection);
-
-    circle.style.animationPlayState = 'paused';
-    skillsSection.style.animationPlayState = 'paused';
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const categoryDisplays = document.querySelectorAll('.category-display');
-
-    categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const category = this.dataset.category;
-
-            categoryDisplays.forEach(display => {
-                display.classList.remove('active');
-            });
-
-            document.getElementById(category + '-display').classList.add('active');
-
-            // Highlight level bars
-            const levelBars = document.querySelectorAll('.fancy-level-bar');
-            levelBars.forEach(bar => {
-                const level = parseInt(bar.dataset.level);
-                bar.innerHTML = ''; // Clear existing segments
-
-                for (let i = 0; i < 4; i++) {
-                    const segment = document.createElement('span');
-                    if (i < level) {
-                        segment.classList.add('active');
-                    }
-                    bar.appendChild(segment);
-                }
-            });
-        });
-    });
-});
-    </script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
